@@ -1,0 +1,35 @@
+{
+  "name": "genpark-autonomous-ai-teammate-task-delegator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous AI teammate delegation manager, task queue scheduler & delivery verifier.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "ai-teammate",
+    "task-delegation",
+    "agent-orchestrator",
+    "work-verifier",
+    "ph-august15"
+  ],
+  "inputs": {
+    "delegated_task": {
+      "type": "string"
+    },
+    "assigned_agent_role": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "task_ticket_id": {
+      "type": "string"
+    },
+    "estimated_completion_min": {
+      "type": "integer"
+    },
+    "delegation_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
